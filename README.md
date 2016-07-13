@@ -39,5 +39,6 @@ Change directory to "src":
 Run "gulp" without any task added to it from the command line to start the nodejs server and front-end server.
 Your browser should auto launch.
 
-# Questions?  Issues?  File an issue or email Randall Potter : RandallBPotter15@gmail.com
+# Questions?  Issues?
+File an issue or email Randall Potter : RandallBPotter15@gmail.com
 
