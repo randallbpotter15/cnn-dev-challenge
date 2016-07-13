@@ -6908,3 +6908,6 @@ button.close {
 .twt-wrapper {
   margin-top: 50px;
 }
+.btn {
+  margin: 10px auto;
+}

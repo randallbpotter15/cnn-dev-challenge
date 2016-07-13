@@ -9,7 +9,7 @@ var twitterConfig = {
     TwitterService = new Twitter(twitterConfig),
     logger = require('../utils/logger');
 
-exports.GetTweets = function(request, response){
+exports.GetTweets = function(searchQuery, request, response){
 
     response.contentType('application/json');
     var
@@ -21,8 +21,10 @@ exports.GetTweets = function(request, response){
             }
         },
         success = function (data) {
-            logger.info('Data [%s]', data);
+            //logger.info('Data [%s]', data);
             response.send(data);
         };
-        tweetData = TwitterService.getSearch({'q':'#cnn','count': 10}, error, success);
+        var query = searchQuery || '@cnn';
+        console.log(query);
+        tweetData = TwitterService.getSearch({'q':query,'count': 10}, error, success);
 };

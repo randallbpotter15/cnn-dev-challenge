@@ -15,6 +15,13 @@
                                 CNN Developer Challenge
                             </div>
                             <div class="panel-body">
+                                <form>
+                                    <label for="search" value="Type in a hashtag and click submit.">
+                                        <input id="search" type="text" class="form-control" ng-model="searchQuery" ng-required="required" placeholder="type search here..." />
+                                        <button type="submit" class="btn" value="search" ng-click="searchTwitter()">Search</button>
+                                    </label>
+                                </form>
+                                <hr />
                                 <ul class="media-list">
 
                                     <li class="media" ng-repeat="tweet in tweets">
