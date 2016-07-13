@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2ad1433f-c557-4397-a4bb-f87ee964d6b1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/app/controllers/appController.js" afterPath="$PROJECT_DIR$/src/client/app/controllers/appController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/dist/assets/js/main.js" afterPath="$PROJECT_DIR$/src/client/dist/assets/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/dist/assets/js/main.min.js" afterPath="$PROJECT_DIR$/src/client/dist/assets/js/main.min.js" />
     </list>
     <ignored path="cnn-dev-challenge.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,8 +27,8 @@
       <file leaf-file-name="appController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/client/app/controllers/appController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="340">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -481,12 +479,12 @@
       <workItem from="1468391827011" duration="4015000" />
       <workItem from="1468395889527" duration="2421000" />
       <workItem from="1468427784550" duration="129000" />
-      <workItem from="1468427933842" duration="13610000" />
+      <workItem from="1468427933842" duration="13817000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36196000" />
+    <option name="totallyTimeSpent" value="36403000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -859,14 +857,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/server/services/twitter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
@@ -891,10 +881,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/services/twitter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/client/app/controllers/appController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="340">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>

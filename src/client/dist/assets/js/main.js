@@ -10,8 +10,12 @@ angular.module('myApp', ['appController'])
 angular.module('appController', [])
 
     .controller('appController', ['$scope', '$http', function($scope, $http) {
-        $scope.searchTwitter = function() {
-            var searchURL = "http://localhost:3001/api/tweets/" + $scope.searchQuery;
+        $scope.searchTwitter = function(query) {
+            var lookUp = $scope.searchQuery;
+            if(typeof query !== undefined && query !=="") {
+                lookUp = query;
+            }
+            var searchURL = "http://localhost:3001/api/tweets/" + lookUp;
             $http.get(searchURL)
                 .then(function mySuccess(response) {
                     $scope.tweets = response.data.statuses;
@@ -21,8 +25,7 @@ angular.module('appController', [])
         };
 
         function init() {
-            $scope.searchQuery = $scope.searchQuery || '@cnn';
-            $scope.searchTwitter();
+            $scope.searchTwitter('@cnn');
         }
 
         init();
