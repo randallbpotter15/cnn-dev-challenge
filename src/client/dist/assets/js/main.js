@@ -1,5 +1,8 @@
 'use strict';
-angular.module('myApp', ['appController']);
+angular.module('myApp', ['appController'])
+    .config(['$httpProvider', function($httpProvider) {
+        $httpProvider.defaults.useXDomain = true;
+    }]);
 
 'use strict';
 
@@ -29,7 +32,7 @@ angular.module('twitterService', [])
 
            $http({
                method : "GET",
-               url : "http://localhost:3001/api/tweets",
+               url : "http://127.0.0.1:3001/api/tweets",
                headers: {
                    'Content-Type': 'application/json'
                }

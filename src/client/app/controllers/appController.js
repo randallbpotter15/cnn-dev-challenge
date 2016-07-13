@@ -10,6 +10,7 @@ angular.module('appController', [])
 
         $http.get("http://127.0.0.1:3001/api/tweets/").then(function (response) {
             console.log(response.data);
+            $scope.tweets = response.data.statuses;
         });
 
     }]);

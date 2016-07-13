@@ -59,6 +59,7 @@ gulp.task('server', function () {
 
 // launch front-end
 gulp.task('connect', connect.server({
+    host: "127.0.0.1",
     root: ['client'],
     port: 1337,
     livereload: true,

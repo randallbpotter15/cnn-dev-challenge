@@ -16,20 +16,22 @@
                             </div>
                             <div class="panel-body">
                                 <ul class="media-list">
-                                    <li class="media">
+
+                                    <li class="media" ng-repeat="tweet in tweets">
                                         <a href="#" class="pull-left">
-                                            <img src="tweet profile image here" alt="" class="img-circle">
+                                            <img src={{tweet.profile_image_url_https}}" alt="" class="img-circle">
                                         </a>
                                         <div class="media-body">
                                         <span class="text-muted pull-right">
-                                            <small class="text-muted">tweet time here</small>
+                                            <small class="text-muted">{{tweet.created_at}}</small>
                                         </span>
-                                            <strong class="text-success">tweet user here</strong>
+                                            <strong class="text-success">{{tweet.user.screen_name}}</strong>
                                             <p>
-                                                tweet body here
+                                                {{tweet.text}}
                                             </p>
                                         </div>
                                     </li>
+
                                 </ul>
                             </div>
                         </div>
