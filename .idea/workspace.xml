@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ad1433f-c557-4397-a4bb-f87ee964d6b1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/app/assets/styles/global.less" afterPath="$PROJECT_DIR$/src/client/app/assets/styles/global.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/app/controllers/appController.js" afterPath="$PROJECT_DIR$/src/client/app/controllers/appController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/dist/assets/css/global.css" afterPath="$PROJECT_DIR$/src/client/dist/assets/css/global.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/dist/assets/css/global.min.css" afterPath="$PROJECT_DIR$/src/client/dist/assets/css/global.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/dist/assets/js/main.js" afterPath="$PROJECT_DIR$/src/client/dist/assets/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/dist/assets/js/main.min.js" afterPath="$PROJECT_DIR$/src/client/dist/assets/js/main.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/index.html" afterPath="$PROJECT_DIR$/src/client/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/server/routes.js" afterPath="$PROJECT_DIR$/src/server/routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/server/server.js" afterPath="$PROJECT_DIR$/src/server/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/server/services/twitter.js" afterPath="$PROJECT_DIR$/src/server/services/twitter.js" />
     </list>
     <ignored path="cnn-dev-challenge.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,8 +29,8 @@
       <file leaf-file-name="appController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/client/app/controllers/appController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="153">
+              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -489,12 +481,12 @@
       <workItem from="1468391827011" duration="4015000" />
       <workItem from="1468395889527" duration="2421000" />
       <workItem from="1468427784550" duration="129000" />
-      <workItem from="1468427933842" duration="12871000" />
+      <workItem from="1468427933842" duration="13312000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35457000" />
+    <option name="totallyTimeSpent" value="35898000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -901,8 +893,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/client/app/controllers/appController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="153">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
           <folding />
         </state>
       </provider>
