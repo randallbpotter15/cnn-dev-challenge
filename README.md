@@ -3,7 +3,7 @@
 # Main Dependencies
 Requires: NodeJS+NPM and GULP
 
-NodeJS/NPM:
+NodeJS with NPM: https://nodejs.org
 
 Gulp:  npm install -g gulp
 
