@@ -11,7 +11,7 @@ Change the following to match your own:
 
 Open src/server/services/twitter.js
 Locate the following and input your values:
-
+```
 twitterConfig = {
         "consumerKey" : "YOUR CONSUMER KEY",
         "consumerSecret" :"YOUR CONSUMER SECRETw",
@@ -19,7 +19,7 @@ twitterConfig = {
         "accessTokenSecret" : "YOUR ACCESS TOKEN SECRET",
         "callBackUrl" : "http://127.0.0.1"
     },
-
+```
 NodeJS Express Log Files are under:
 src/server/logs/all-logs.log
 
