@@ -24,5 +24,5 @@ exports.GetTweets = function(request, response){
             logger.info('Data [%s]', data);
             response.send(data);
         };
-        tweetData = TwitterService.getSearch({'q':'#nodejs','count': 10}, error, success);
+        tweetData = TwitterService.getSearch({'q':'#cnn','count': 10}, error, success);
 };
