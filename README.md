@@ -1,26 +1,28 @@
 # cnn-dev-challenge
-style guide: https://johnpapa.net/angular-app-structuring-guidelines/
 
 Download repo.
 Requires: NodeJS and NPM
 Run npm install in the project root directory.
-Start your node.js server with nodemon server.js
-Verify server is running by opening a browser and navigating to: http://localhost:3001/
+
+Configuration Notes:
 
 node-server/services/twitter.js
 Change the following to match your own:
 
+Open src/server/services/twitter.js
+Locate the following and input your values:
+
 twitterConfig = {
-        "consumerKey" : "ZujsNIRYjovMCkgq0Y9MQ",
-        "consumerSecret" :"BtXq9SRIUaILEEhaXvuy0eCyUZGLcEI96WMAgAT5nw",
-        "accessToken" : "25361224-OZA5M68RvuZ1eidLkQNlxtqOfCD24GlGvtGIt9Fa5",
-        "accessTokenSecret" : "mJojcxV06fnE2LCNnhbsGpErzhVXGoN9VljFexplgEeuv",
+        "consumerKey" : "YOUR CONSUMER KEY",
+        "consumerSecret" :"YOUR CONSUMER SECRETw",
+        "accessToken" : "YOUR ACCESS TOKEN",
+        "accessTokenSecret" : "YOUR ACCESS TOKEN SECRET",
         "callBackUrl" : "http://127.0.0.1"
     },
 
-log files are found "node-server/logs/all-logs.log"
+NodeJS Express Log Files are under:
+src/server/logs/all-logs.log
 
-gulp task to compile and start nodejs server and front-end page
-
-ruby installer for windows: http://rubyinstaller.org/
-gem install sass: http://sass-lang.com/install
+After app is configured.
+Run "gulp" without any task added to it from the command line to start the nodejs server and front-end server.
+Your browser should auto launch.

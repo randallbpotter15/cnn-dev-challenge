@@ -8,7 +8,6 @@ var util            = require('util');
 var bodyParser      = require('body-parser');            // pull information from HTML POST (express4)
 var methodOverride  = require('method-override');        // simulate DELETE and PUT (express4)
 var port            = 3001;
-var cors            = require('cors');
 var app             = express();                         // create our app w/ express
 
 //requires
@@ -25,12 +24,15 @@ app.use(methodOverride());
 
 logger.debug("Overriding 'Express' logger");
 app.use(require('morgan')("combined", { "stream": logger.stream }));
-app.use(cors({origin: 'http://localhost:1337'}));
-app.all('/*', function(req, res, next) {
-    res.header('Access-Control-Allow-Origin', '*');
-    res.header('Access-Control-Allow-Headers', 'Content-Type,X-Requested-With');
+
+var allowCrossDomain = function(req, res, next) {
+    res.header('Access-Control-Allow-Origin', "http://127.0.0.1:1337");
+    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+    res.header("Access-Control-Allow-Headers", "X-Requested-With, Content-Type");
     next();
-});
+};
+app.use(allowCrossDomain);
+
 // listen (start app with node server.js) ======================================
 app.listen(port);
 logger.info("App listening on port " + port);

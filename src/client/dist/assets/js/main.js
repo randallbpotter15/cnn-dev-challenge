@@ -29,7 +29,10 @@ angular.module('twitterService', [])
 
            $http({
                method : "GET",
-               url : "127.0.0.1:3001/api/tweets"
+               url : "http://localhost:3001/api/tweets",
+               headers: {
+                   'Content-Type': 'application/json'
+               }
            }).then(function mySuccess(response) {
                result = response.data;
            }, function myError(response) {
