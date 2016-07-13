@@ -1,10 +1,15 @@
 # cnn-dev-challenge
 
-Download repo.
+# Main Dependencies
 Requires: NodeJS and NPM
-Run npm install in the project root directory.
 
-Configuration Notes:
+# Obtain Source Code
+Download repo.
+
+# Install Dependencies
+Run "npm install" in the project root directory.
+
+# Configuration Notes:
 
 node-server/services/twitter.js
 Change the following to match your own:
@@ -20,9 +25,12 @@ twitterConfig = {
         "callBackUrl" : "http://127.0.0.1"
     },
 ```
+
+# Log Location
 NodeJS Express Log Files are under:
 src/server/logs/all-logs.log
 
+# Starting the App
 After app is configured.
 Run "gulp" without any task added to it from the command line to start the nodejs server and front-end server.
 Your browser should auto launch.
