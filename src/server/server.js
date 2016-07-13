@@ -25,13 +25,12 @@ app.use(methodOverride());
 logger.debug("Overriding 'Express' logger");
 app.use(require('morgan')("combined", { "stream": logger.stream }));
 
-var allowCrossDomain = function(req, res, next) {
-    res.header('Access-Control-Allow-Origin', "http://127.0.0.1:1337");
-    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-    res.header("Access-Control-Allow-Headers", "X-Requested-With, Content-Type");
+app.all('/*', function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    res.header("Access-Control-Allow-Methods", "GET, POST","PUT");
     next();
-};
-app.use(allowCrossDomain);
+});
 
 // listen (start app with node server.js) ======================================
 app.listen(port);

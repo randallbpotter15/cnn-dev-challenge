@@ -1,2 +1,6 @@
 'use strict';
-angular.module('myApp', ['appController']);
+angular.module('myApp', ['appController'])
+    .config(['$httpProvider', function($httpProvider) {
+        $httpProvider.defaults.useXDomain = true;
+        delete $httpProvider.defaults.headers.common['X-Requested-With'];
+    }]);
