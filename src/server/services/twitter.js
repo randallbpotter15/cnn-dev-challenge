@@ -25,6 +25,5 @@ exports.GetTweets = function(searchQuery, request, response){
             response.send(data);
         };
         var query = searchQuery || '@cnn';
-        console.log(query);
         tweetData = TwitterService.getSearch({'q':query,'count': 10}, error, success);
 };

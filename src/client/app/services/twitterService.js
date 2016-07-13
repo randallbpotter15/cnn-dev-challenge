@@ -18,7 +18,6 @@ angular.module('twitterService', [])
            }, function myError(response) {
                result = response.statusText;
            });
-            console.log(result);
            return result;
        }
    }
