@@ -18,7 +18,15 @@ angular.module('appController', [])
                 }, function myError(response) {
                     throw new Error("Please try again later...");
                 });
+        };
+
+        function init() {
+            $scope.searchQuery = $scope.searchQuery || '@cnn';
+            $scope.searchTwitter();
         }
+
+        init();
+
     }]);
 
 
