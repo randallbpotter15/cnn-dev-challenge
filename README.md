@@ -10,8 +10,6 @@ Download repo.
 Run "npm install" in the project root directory.
 
 # Configuration Notes:
-
-node-server/services/twitter.js
 Change the following to match your own:
 
 Open src/server/services/twitter.js
