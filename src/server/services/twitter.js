@@ -10,6 +10,7 @@ var twitterConfig = {
     logger = require('../utils/logger');
 
 exports.GetTweets = function(request, response){
+
     response.contentType('application/json');
     var
         error = function (err, request, response, body) {
@@ -21,7 +22,7 @@ exports.GetTweets = function(request, response){
         },
         success = function (data) {
             logger.info('Data [%s]', data);
-            response.send(tweetData);
+            response.send(data);
         };
         tweetData = TwitterService.getSearch({'q':'#nodejs','count': 10}, error, success);
 };

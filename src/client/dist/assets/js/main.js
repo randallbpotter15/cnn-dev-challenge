@@ -2,6 +2,7 @@
 angular.module('myApp', ['appController'])
     .config(['$httpProvider', function($httpProvider) {
         $httpProvider.defaults.useXDomain = true;
+        delete $httpProvider.defaults.headers.common['X-Requested-With'];
     }]);
 
 'use strict';
@@ -14,8 +15,9 @@ angular.module('appController', [])
         // when landing on the page, get all todos and show them
         //console.log(Tweets.getTweets());
 
-        $http.get("http://127.0.0.1:3001/api/tweets/").then(function (response) {
+        $http.get("http://localhost:3001/api/tweets/").then(function (response) {
             console.log(response.data);
+            $scope.tweets = response.data.statuses;
         });
 
     }]);
@@ -32,7 +34,7 @@ angular.module('twitterService', [])
 
            $http({
                method : "GET",
-               url : "http://127.0.0.1:3001/api/tweets",
+               url : "http://localhost:3001/api/tweets",
                headers: {
                    'Content-Type': 'application/json'
                }

@@ -39,7 +39,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('default', function(){
-    gulp.start('server', 'styles', 'scripts', 'connect');
+    gulp.start('styles', 'scripts', 'server', 'connect');
 });
 
 gulp.task('watch', function() {
@@ -61,7 +61,7 @@ gulp.task('server', function () {
 gulp.task('connect', connect.server({
     host: "127.0.0.1",
     root: ['client'],
-    port: 1337,
+    port: 5555,
     livereload: true,
     open: {
         browser: undefined,

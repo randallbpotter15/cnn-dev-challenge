@@ -9,7 +9,7 @@ angular.module('twitterService', [])
 
            $http({
                method : "GET",
-               url : "http://127.0.0.1:3001/api/tweets",
+               url : "http://localhost:3001/api/tweets",
                headers: {
                    'Content-Type': 'application/json'
                }
@@ -18,7 +18,7 @@ angular.module('twitterService', [])
            }, function myError(response) {
                result = response.statusText;
            });
-
+            console.log(result);
            return result;
        }
    }
