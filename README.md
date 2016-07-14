@@ -35,9 +35,18 @@ src/server/logs/all-logs.log
 
 # Starting the App
 After app is configured:
+
 Change directory to "src":
+
 Run "gulp" without any task added to it from the command line to start the nodejs server and front-end server.
+
 Your browser should auto launch.
+
+
+# Unit Tests using Mocha
+Change directory to "src/server"
+Type "mocha"
+
 
 # Questions?  Issues?
 File an issue or email Randall Potter : RandallBPotter15@gmail.com
