@@ -15,10 +15,11 @@
                                 CNN Developer Challenge
                             </div>
                             <div class="panel-body">
-                                <form>
+                                <form name="searchForm" novalidate>
                                     <label for="search" value="Type in a hashtag and click submit.">
-                                        <input id="search" type="text" class="form-control" ng-model="searchQuery" ng-required="required" placeholder="type search here..." />
-                                        <button type="submit" class="btn" value="search" ng-click="searchTwitter()">Search</button>
+                                        <input id="search" type="text" class="form-control" ng-model="searchQuery" placeholder="type search here..." required />
+                                        <p ng-show="searchForm.search.$invalid && !searchForm.search.$pristine" class="help-block">A search term is required.</p>
+                                        <button type="submit" class="btn" value="search" ng-click="searchTwitter()" ng-disabled="searchForm.$invalid">Search</button>
                                     </label>
                                 </form>
                                 <hr />
