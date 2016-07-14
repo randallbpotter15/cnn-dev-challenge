@@ -26,6 +26,7 @@ angular.module('appController', [])
                 .then(function mySuccess(response) {
                     $scope.tweets = response.data.statuses;
                 }, function myError(response) {
+                    $log.debug(response);
                     throw new Error("Please try again later...");
                 });
         };
@@ -38,29 +39,3 @@ angular.module('appController', [])
 
     }]);
 
-
-'use strict';
-
-angular.module('twitterService', [])
-.service('Tweets', function($http) {
-   return {
-       getTweets : function() {
-           //return "test is working";
-           var result = "";
-
-           $http({
-               method : "GET",
-               url : "http://localhost:3001/api/tweets",
-               headers: {
-                   'Content-Type': 'application/json'
-               }
-           }).then(function mySuccess(response) {
-               result = response.data;
-           }, function myError(response) {
-               result = response.statusText;
-           });
-           return result;
-       }
-   }
-    
-});

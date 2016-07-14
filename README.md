@@ -34,7 +34,7 @@ src/server/logs/all-logs.log
 _After app is configured:_
 * Change directory to "src":
 * Run "gulp" without any task added to it from the command line to start the nodejs server and front-end server.
-* Your browser should auto launch.
+* Your browser should auto launch. NodeJS Server is running at http://127.0.0.1:3001 while front-end server is running at http://127.0.0.1:5555
 
 ### Unit Tests using Mocha
 * Change directory to "src/server"
