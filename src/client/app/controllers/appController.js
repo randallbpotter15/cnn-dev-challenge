@@ -19,7 +19,6 @@ angular.module('appController', [])
                 .then(function mySuccess(response) {
                     $scope.tweets = response.data.statuses;
                 }, function myError(response) {
-                    $log.debug(response);
                     throw new Error("Please try again later...");
                 });
         };
