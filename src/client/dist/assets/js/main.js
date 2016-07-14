@@ -21,6 +21,7 @@ angular.module('appController', [])
                 lookUp = $scope.searchQuery;
             }
 
+
             var searchURL = "http://localhost:3001/api/tweets/" + lookUp;
             $http.get(searchURL)
                 .then(function mySuccess(response) {

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ad1433f-c557-4397-a4bb-f87ee964d6b1" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/app/controllers/appController.js" afterPath="$PROJECT_DIR$/src/client/app/controllers/appController.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/dist/assets/js/main.js" afterPath="$PROJECT_DIR$/src/client/dist/assets/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/dist/assets/js/main.min.js" afterPath="$PROJECT_DIR$/src/client/dist/assets/js/main.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client/index.html" afterPath="$PROJECT_DIR$/src/client/index.html" />
     </list>
     <ignored path="cnn-dev-challenge.iws" />
@@ -30,8 +30,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/client/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+            <state relative-caret-position="254">
+              <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -40,8 +40,8 @@
       <file leaf-file-name="appController.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/client/app/controllers/appController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="238">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -177,8 +177,8 @@
         <option value="$PROJECT_DIR$/src/server/routes.js" />
         <option value="$PROJECT_DIR$/src/client/app/services/twitterService.js" />
         <option value="$PROJECT_DIR$/src/server/services/twitter.js" />
-        <option value="$PROJECT_DIR$/src/client/index.html" />
         <option value="$PROJECT_DIR$/src/client/app/controllers/appController.js" />
+        <option value="$PROJECT_DIR$/src/client/index.html" />
       </list>
     </option>
   </component>
@@ -482,12 +482,12 @@
       <workItem from="1468391827011" duration="4015000" />
       <workItem from="1468395889527" duration="2421000" />
       <workItem from="1468427784550" duration="129000" />
-      <workItem from="1468427933842" duration="14453000" />
+      <workItem from="1468427933842" duration="14542000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37039000" />
+    <option name="totallyTimeSpent" value="37128000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -500,7 +500,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-245" y="-1088" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18336888" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -510,7 +510,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3954496" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3954496" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997833" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -886,16 +886,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/client/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        <state relative-caret-position="254">
+          <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/client/app/controllers/appController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="238">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding />
         </state>
       </provider>
