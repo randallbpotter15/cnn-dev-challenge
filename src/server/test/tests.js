@@ -7,7 +7,7 @@ var server = supertest.agent("http://127.0.0.1:3001");
 
 // UNIT test begin
 
-describe("unit test",function(){
+describe("Default API Search ",function(){
 
     // #1 should return home page
 
@@ -15,13 +15,12 @@ describe("unit test",function(){
 
         // calling home page api
         server
-            .get("/api/tweets/")
-            .expect(200) // THis is HTTP response
+            .get("/api/tweets/@cnn")
+            .expect(200) // This is HTTP response
             .end(function(err,res){
                 // HTTP status should be 200
                 res.status.should.equal(200);
-                // Error key should be false.
-                res.body.error.should.equal(false);
+
                 done();
             });
     });
