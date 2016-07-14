@@ -42,3 +42,6 @@ Your browser should auto launch.
 # Questions?  Issues?
 File an issue or email Randall Potter : RandallBPotter15@gmail.com
 
+# Todo:
+Mocha Test Assertions
+
