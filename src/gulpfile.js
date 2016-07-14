@@ -16,6 +16,8 @@ var gulp = require('gulp'),
     nodemon = require('gulp-nodemon');
 
 // define tasks here
+
+// handle less compilation and minification
 gulp.task('styles', function() {
     return gulp.src('client/app/assets/styles/global.less')
         .pipe(less())
@@ -25,6 +27,7 @@ gulp.task('styles', function() {
         .pipe(gulp.dest('client/dist/assets/css'));
 });
 
+// handle javascript concatenation and minification
 gulp.task('scripts', function() {
     return gulp.src('client/app/**/*.js')
         .pipe(concat('main.js'))
@@ -34,14 +37,12 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('client/dist/assets/js'))
 });
 
-gulp.task('clean', function() {
-    return del(['dist/assets/css', 'dist/assets/js']);
-});
-
+// default task:  gets styles and scripts taken care of, kicks off nodejs server and then launches front-end app
 gulp.task('default', function(){
     gulp.start('styles', 'scripts', 'server', 'connect');
 });
 
+// watch for less and js changes and run compile / concat respectively
 gulp.task('watch', function() {
     // Watch .scss files
     gulp.watch('client/app/assets/styles/global.less', ['styles']);
